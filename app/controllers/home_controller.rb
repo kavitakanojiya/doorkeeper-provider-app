@@ -7,6 +7,6 @@ class HomeController < ApplicationController
   end
 
   def sso
-    render json: { status: 'Course updated', sso_params: params['_json'] }
+    render json: { status: 'Course updated', sso_params: params['_json'] }.to_json
   end
 end
