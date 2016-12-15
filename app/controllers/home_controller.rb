@@ -3,7 +3,7 @@ class HomeController < ApplicationController
   end
 
   def token
-    render json: { access_token: 'access_token' }
+    render json: { access_token: 'access_token' }.to_json
   end
 
   def sso
