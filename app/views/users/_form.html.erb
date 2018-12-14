@@ -1,5 +1,15 @@
 <%= form_for(@user, :url => user_path(@user)) do |f| %>
   <div class="clearfix">
+    <%= f.label :first_name %>
+    <div class="input">
+      <%= f.text_field :first_name %>
+    </div>
+
+    <%= f.label :last_name %>
+    <div class="input">
+      <%= f.text_field :last_name %>
+    </div>
+
     <%= f.label :email %>
     <div class="input">
       <%= f.email_field :email %>
